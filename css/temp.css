@@ -1,0 +1,297 @@
+	*{margin:0px;}
+.container{width:100%;
+           margin:0px auto;
+		  }     
+
+		  /*HEADER STARTS*/
+		.header{background:#FFB233;
+			    padding:5px;
+				
+				display:flex;}
+		.info{padding-top:10px;
+		       flex:75%;
+		}
+		.info p{margin-right:10px;
+		display:inline-block;
+				 font-size:20px;
+				 color:white;}
+	
+
+
+		.images{float:right;
+		        flex:25%;
+	            }
+		.images img{margin-right:5px;
+			       border-radius:20px;
+				   margin-top:6px;}
+@media only screen and (max-width:300px)
+		{ .header{flex-direction:column;}
+			
+		  .images{float:left;
+		         }
+	    }
+@media only screen and (min-width:301px) and (max-width:700px)
+         {.header{flex-direction:column;
+		        }
+				.images{float:left;
+			       }
+		}
+@media only screen and (min-width:701px) and (max-width:900px)
+		{.header{display:flex;}
+		.images{float:right;
+		        margin-top:14px;}
+				}
+											/* HEADER ENDS*/
+										    /* MENU STARTS*/
+      #menu{background:#666;
+            padding-bottom:6px;
+			}
+	 .logo h1{color:#33FFEC;}
+	  .logo h3{color:#FF33CE;
+	           margin-left:34px;}
+      .lists{display:flex;
+		   }
+		.lists li{list-style:none;
+		            margin-top:-31px;
+					margin-left:57px;
+					}
+		 .lists li a{text-decoration:none;
+				     color:white;}
+		.servicesmenu{
+						display:none;
+						position:absolute;
+					
+						margin-left:-20px;
+						margin-top:128px;
+					 padding:0px;}
+					
+.servicesmenu li{line-height:0.4;
+               }
+
+	.servicesmenu li a{margin:3px;}
+
+
+		             
+.servicesmenu li{line-height:0.4;
+                background:#999;}
+.servicesmenu li a{margin:3px;}
+
+.submenu  li:hover .servicesmenu{
+	               display:block;
+                    }
+
+			.sidelinks{float:right;
+			         margin-top:-31px;
+					display:flex;
+					margin-right:40px;
+					  }
+			   .sidelinks li{list-style:none;
+			               }
+			.sidelinks li a{text-decoration:none;
+			               margin-right:12px;
+							font-size:20px;
+							color:white;}
+@media only screen and (max-width:300px)
+			{#menu{padding-bottom:100px;}
+			.lists{flex-direction:column;
+					}
+					.lists li{
+		            margin-top:10px;
+					margin-left:50px;
+					}
+					
+					
+			.sidelinks{float:left;
+			           display:block;
+					   margin-top:5px;
+					   margin-right:10px;
+					   }
+					   .sidelinks li a{
+			               margin-right:6px;
+							}
+			}
+@media only screen and (min-width:301px) and (max-width:700px)
+			{#menu{padding:150px;
+				  }
+			.lists{justify-content:end;
+		        flex:48%;}
+					.lists li{
+		            margin-top:10px;
+					margin-left:9px;
+					}
+					  .sidelinks li a{ margin-right:10px;}
+				  .sidelinks{float:left;
+							margin-top:20px;
+							display:block;
+							 margin-left:-61px;}
+			}
+@media only screen and (min-width:701px) and (max-width:900px)
+{
+			.logo h3{
+	           margin-left:5px;}
+			   .lists{display:flex;
+					 }
+					 .lists li{
+		            margin-top:-27px;
+					 margin-left:51px;}
+					 .lists li a{margin-left:-20px;}
+					  .sidelinks{float:right;
+					            display:flex;
+								margin-right:10px;
+					   }
+			
+			}
+											/* MENU ENDS*/
+                                        /*BANNER STARTS*/
+                    #section{display:flex;
+					       background:#999;
+					  }
+					  .content{padding:70px;}
+					  .content h2{color:#33FFEC;}
+					  .content p{text-align:justify;
+					             margin-top:10px;
+								 font-size:20px;
+								}
+					  .image{margin:10px 10px 10px 10px}
+					  .banner-link{font-size:17px;
+					           border:2px solid #333;
+					         background:#FFB233;
+					        text-decoration:none;
+					        float:right;
+					       padding:5px;}	
+						   @media only screen and (max-width:300px)
+						   {#section{
+					         flex-direction:column;
+                             }
+							 .image img{width:100%;}
+						   }
+						   @media only screen and (min-width:301px) and (max-width:700px)
+						   {#section{
+					         display:flex;
+                             }
+							 .image img{width:50px;
+							            height:100px;
+										padding-top:70px;
+										padding-right:30px;}
+						   }
+						   @media only screen and (min-width:701px) and (max-width:900px)
+						   {#section{
+					         display:flex;
+                             }
+							 .image img{width:100px;
+							            height:200px;
+										padding-top:70px;
+										padding-right:30px;}
+						   } /*BANNER ENDS*/
+						   /*DISCOUNT SECTION STARTS*/					  
+						   
+						  
+						   #discounts{display:flex;
+						              margin-top:10px;
+									 }
+		               .discount-sale h2{text-align:center;
+					                     text-decoration:underline;
+										   color:#FFB233;
+										   font-size:25px;
+										   }
+							   .fashion{flex:80%;
+							   display:flex;
+						}
+							   .fashion img{border-radius:100%;
+									              margin:2px;
+												  margin-top:10px;}
+								.block h3{text-align:justify;}
+								.block h5{text-align:justify;}
+                                .sidenav{flex:20%;
+								background:#FFB233;
+								}	
+                                 .sidenav h1{margin-top:10px;
+								 color:red;
+								 text-align:center;}	
+                                 .sidenav h3{margin-left:10px;
+								 line-height:3.5;}	
+             @media only screen and (max-width:300px)	
+			 { #discounts{flex-direction:column;}
+			     .fashion{flex:100%;
+							   flex-direction:column;
+				 }
+			 }			
+ @media only screen and (min-width:301px) and (max-width:700px)
+      { #discounts{flex-direction:column;}
+			     .fashion{flex:48%;
+				 display:flex;}
+			 }		 
+  @media only screen and (min-width:701px) and (max-width:900px)
+  	{ 
+		#discounts{display:flex;}
+		.fashion{
+			flex:30%;
+				 display:flex;}
+			 }	
+                      /*DISCOUNT SECTION ENDS*/
+											/*COLLECTION STARTS*/
+					           						.sale h2{text-align:center;
+					                            text-decoration:underline;
+										        color:#FFB233;
+										        font-size:25px;
+										       padding-bottom:10px;
+										      }
+										   #collect{display:flex;
+													}
+										.collections{flex:90%;
+													display:flex;
+													flex-wrap:wrap;
+													margin:2px;
+													}
+										.collections img{
+											border-radius:50%;
+											
+										}
+									     .coupon{flex:10%;
+											background:#33FFEC;}
+										.coupon h1{text-align:center;
+					                                 color:red;
+													font-size:25px;
+													padding-bottom:10px;}
+													input[type=submit]{
+															  width: 70%;
+															  background-color: #4CAF50;
+															  color: white;
+															  font-size:20px;
+															  padding: 10px;
+															  margin: 8px 0;
+												        border-radius: 4px;
+													    cursor: pointer;}
+										  
+															 
+													/*COLLECTION ENDS*/
+													/*FOOTER STARTS*/
+													#footer{display:flex;
+													background:#999;
+													margin-top:10px;}
+													.Latestposts{flex:25%;
+													}
+													.Latestposts div{margin-top:10px;}
+													.About{flex:25%;
+													}
+													.About p{text-align:center;
+													         width:50%;
+															 margin-top:10px;
+															 margin-left:-40px;}
+													.Address{flex:25%;
+													}
+													.Address p{text-align:center;
+													         width:50%;
+															 margin-top:10px;
+															 margin-left:-40px;}
+												.QuickLinks{flex:25%;
+												}
+												.Quick li{list-style:none;
+												font-size:20px;
+												margin-top:10px;
+												margin-left:-40px;
+												}
+												.Quick li a{text-decoration:none;
+												            color:#333;}
+													/*FOOTER ENDS*/			 
+			            
